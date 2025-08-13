@@ -443,61 +443,7 @@
                     </div>
                     
                     <!-- Telegram Settings -->
-                    <!-- <div class="bg-white rounded-lg shadow-sm p-6">
-    <h3 class="text-xl font-semibold text-gray-900 mb-4">Telegram Notifications</h3>
-    <div class="space-y-4">
-        <div class="bg-blue-50 p-4 rounded-lg">
-            <h4 class="font-medium text-blue-900 mb-2">Bot Connected ✅</h4>
-            <p class="text-sm text-blue-800">Orders will be sent to your Telegram automatically.</p>
-        </div>
-        <button onclick="testTelegramNotification()" class="w-full bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700">
-            Test Notification
-        </button>
-    </div>
-</div>
-
-<script>
-const BOT_TOKEN = "7725815217:AAHnUiqv2KM3sFc4UOUtykNmVBxC-dBgJTU";
-const CHAT_ID = "1872918006";
-
-function sendTelegramMessage(message) {
-    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            chat_id: CHAT_ID,
-            text: message
-        })
-    })
-    .then(res => res.json())
-    .then(data => {
-        if (!data.ok) {
-            console.error("Telegram error:", data);
-            alert("Failed to send message to Telegram.");
-        }
-    })
-    .catch(err => {
-        console.error("Request failed:", err);
-    });
-}
-
-function testTelegramNotification() {
-    sendTelegramMessage("🚀 Test Message: Your bot is working perfectly!");
-}
-
-// Example: Call this function after an order is placed
-function orderPlaced(orderDetails) {
-    let msg = `📦 New Order Received!\n\n` +
-              `Name: ${orderDetails.name}\n` +
-              `Phone: ${orderDetails.phone}\n` +
-              `Product: ${orderDetails.product}\n` +
-              `Amount: ₹${orderDetails.amount}`;
-    sendTelegramMessage(msg);
-}
-</script>
--->
-
-
+                 
                      
                     <div class="bg-white rounded-lg shadow-sm p-6">
                         <h3 class="text-xl font-semibold text-gray-900 mb-4">Telegram Notifications</h3>
